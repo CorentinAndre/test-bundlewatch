@@ -5,6 +5,7 @@ import { lazy } from 'react';
 
 const LazyComponent = lazy(() => import('./LazyComponent'));
 const LazyComponentTwo = lazy(() => import('./LazyComponent2'));
+const LazyComponentThree = lazy(() => import('./LazyComponent3'));
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       </header>
       <LazyComponent />
       <LazyComponentTwo />
+      <LazyComponentThree />
     </div>
   );
 }
