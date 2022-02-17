@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { lazy } from 'react';
+
+
+const LazyComponent = lazy(() => import('./LazyComponent'));
 
 function App() {
   return (
@@ -18,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <LazyComponent />
     </div>
   );
 }
