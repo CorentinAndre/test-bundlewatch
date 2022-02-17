@@ -4,6 +4,7 @@ import { lazy } from 'react';
 
 
 const LazyComponent = lazy(() => import('./LazyComponent'));
+const LazyComponentTwo = lazy(() => import('./LazyComponent2'));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </a>
       </header>
       <LazyComponent />
+      <LazyComponentTwo />
     </div>
   );
 }
