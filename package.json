@@ -43,6 +43,7 @@
     "trackBranches": [
       "master"
     ],
+    "normalizeFilenames": "^.+?(\\..+?)\\.\\w+$",
     "files": [
       {
         "path": "build/static/js/*.js"
